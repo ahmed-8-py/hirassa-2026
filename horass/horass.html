@@ -1,0 +1,124 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> الحراس</title>
+    <link rel="stylesheet" href="horass.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+
+
+</head>
+<body>
+
+
+<header>
+    
+  
+  
+    <div class = "all">
+
+            <div class="backBtn">
+                <h1 ><a href="\index.html">الرئيسية🏠</a></h1>
+            </div>
+            
+            <div class="bayanat_centre">
+                <h1 ><a href="\bayanat/bayanat.html">بيانات المركز 📋</a></h1>
+            </div>
+            
+            <div class="bayanat_horas">
+                <h1 ><a href="horass.html">الحراس👨‍🏫</a></h1>
+                
+            </div>
+            
+            <div class="badje">
+                <h1 ><a href="\print/print.html">الطباعة🖨</a></h1>
+            </div>
+            
+                
+            
+            
+    </div>
+    <h1>الحراس</h1>
+</header> 
+
+
+<container>
+            
+        <label for="excelFile" class="upload-btn">تحميل الملف</label>
+        <input type="file" id="excelFile" accept=".xlsx,.xls" hidden>
+
+
+        <button class="save-btn" onclick="save_hirassa_table()">حفظ الجدول</button>
+
+
+        <button class="clear-btn" onclick="clear_days()">مسح عمود الايام</button>
+
+        <button class="clear-btn" onclick="clear_tawzi3()">مسح التوزيع </button>
+      
+        <button class="add-row" onclick="addRow()">إضافة سطر</button>
+        <button class="clear-row" onclick="deleteSelectedRow()">حذف سطر </button>
+        
+       <!--    <button class="clear-row" onclick="auto_distribution()"> الالي التوزيع</button>    -->
+       
+        <button id="btnMain">الرئيسي</button>
+        <button id="btnStop">الممنوع</button>
+       
+        <button id="btnClearColor">مسح التلوين</button>
+      
+      
+       
+
+    </container>
+
+
+
+
+<main id="main_container">
+
+
+    
+    <div id="Tbl_Hrssa_Div"></div>
+
+    <div id="side_panel">
+
+
+        <section class="data_section">
+            <div>
+                <p>عدد الحراس</p>
+                <div id="nbr_horass"></div>            
+            </div>
+
+            <div>
+                <p>عدد الايام</p>
+                <div id="nbr__ayam_horass"></div>            
+            </div>
+        </section>
+
+        
+        <div id="table_result_Div"></div>
+        
+    </div>
+
+</main>
+
+
+
+
+
+
+
+<script src="horass.js"></script>
+</body>
+</html>
+

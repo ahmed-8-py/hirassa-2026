@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> الطباعة</title>
+    <link rel="stylesheet" href="print.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+
+
+</head>
+<body>
+
+
+  
+<header>
+    
+  
+  
+    <div class = "all">
+
+            <div class="backBtn">
+                <h1 ><a href="\index.html">الرئيسية🏠</a></h1>
+            </div>
+            
+            <div class="bayanat_centre">
+                <h1 ><a href="\bayanat/bayanat.html">بيانات المركز 📋</a></h1>
+            </div>
+            
+            <div class="bayanat_horas">
+                <h1 ><a href="\horass/horass.html">الحراس👨‍🏫</a></h1>
+                
+            </div>
+            
+            <div class="badje">
+                <h1 ><a href="print.html">الطباعة🖨</a></h1>
+            </div>
+            
+                
+            
+            
+    </div>
+
+    <h1>الطباعة</h1>
+</header> 
+
+  
+    
+
+
+<main >
+
+
+
+<container>
+    
+                <button class="jadwal_3am" onclick="print_hirassa_table()">الجدول العام</button>
+                <button class="fardii" onclick="renderPrint()">الفردي</button>
+                <button class="sharat" onclick="printBadge()">الشارة</button>
+
+                <button class="jadwal_yaom" onclick="print_yawmi_table()">جدول الحراسة اليومي</button>
+                <button class="jadwal_yaom" onclick="print_absence_table()">جدول الغياب اليومي</button>
+                <button class="jadwal_yaom" onclick="print_absence_all()">جدول الغياب الاجمالي</button>
+          
+                
+</container>
+
+
+
+<aside>
+
+
+        
+            <select name="days" id="days"></select>
+        
+
+
+        <select id="printMode">
+            <label >اختر نوع طباعة جدول الحراسة اليومي</label>
+            <option value="nom">الأسماء</option>
+            <option value="numero">الأرقام</option>
+        </select>
+
+</aside>
+   
+   
+</main>
+
+<div class="page"></div>
+<div class="badges-container"></div>
+
+
+
+<div id="table_hirsasa_yawmi"></div>
+
+     
+
+
+
+
+
+<script src="print.js"></script>
+</body>
+</html>
+

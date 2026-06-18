@@ -1,0 +1,194 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', Arial, sans-serif;
+}
+
+body {
+    background-color: #e0f7fa;
+    align-items: center;
+    
+}
+
+
+header {
+    background-color: #2355c259;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+}
+
+
+.all{
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+ 
+}
+
+.all div{
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    background-color: #21c526c9;
+    color: #fff;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+container button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2196F3;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    font-size: 14px;
+}
+
+
+container button:hover{
+    background: #1976D2;
+
+}
+
+.upload-btn{
+    display: inline-block;
+    padding: 12px 20px;
+    background: #0e7c49;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    font-size: 14px;
+}
+
+.upload-btn:hover{
+    background: #1976D2;
+
+}
+
+
+
+
+
+
+#TTbody td{
+    border: double 1px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.day-cell{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+}
+
+#Tbl_Hrssa_Div {
+    margin-top: 10px;
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+#Tbl_Hrssa_Div thead{
+    text-align: center;
+    font-weight: bold;       
+    font-size: 15px;
+}
+
+
+#Tbl_Hrssa_Div thead td {
+    position: sticky;
+    top: 0;
+    background: #768cb4e3;
+    z-index: 100;
+    border: 1px solid #ccc;
+}
+
+#main_container{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+}
+
+#side_panel{
+    margin-top: 10px;
+    border-radius: 10px;
+    
+    border:1px solid #10df1b;
+    padding:10px;
+    background-color: rgb(234, 252, 186);
+}
+
+#table_result_Div table{
+    margin: 10px auto;
+    border: #3ca74ac9 1px double;
+    
+    text-align: center;
+    font-size: 15px;
+}
+
+#table_result_Div table thead{
+    
+    background-color: #6bc96dc9;
+    
+    text-align: center;
+    font-size: 15px;
+}
+
+.data_section{
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+    margin:10px;
+
+}
+
+.data_section div{
+    background-color: #7fb2dbfa;
+    padding:4px;
+    border-radius:5px;
+    color:white;
+    font-size:18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+.active-color{
+    background-color:#55e31f;
+    color:black;
+}
+.main-cell{
+    background-color:#55e31f !important;
+}
+
+.stop-cell{
+    background-color:#999999 !important;
+}

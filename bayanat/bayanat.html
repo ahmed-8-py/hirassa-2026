@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ادخال البيانات</title>
+    <link rel="stylesheet" href="bayanat.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exceljs/dist/exceljs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+
+
+</head>
+<body>
+
+
+<header>
+    
+  
+  
+    <div class = "all">
+
+            <div class="backBtn">
+                <h1 ><a href="\index.html">الرئيسية🏠</a></h1>
+            </div>
+            
+            <div class="bayanat_centre">
+                <h1 ><a href="bayanat.html">بيانات المركز 📋</a></h1>
+            </div>
+            
+            <div class="bayanat_horas">
+                <h1 ><a href="\horass/horass.html">الحراس👨‍🏫</a></h1>
+                
+            </div>
+            
+            <div class="badje">
+                <h1 ><a href="\print/print.html">الطباعة🖨</a></h1>
+            </div>
+            
+                
+            
+            
+    </div>
+    <h1>بيانات المركز</h1>
+</header> 
+
+
+
+
+
+       
+<div class="dataEntry">
+    
+
+    <form class="dataForm">
+        
+                <div class="lign">
+                        <div class="bayan">
+                                <select class="chahada">
+                                        <option >البكالوريا</option>
+                                        <option >التعليم المتوسط</option>  
+                                </select>
+
+                                
+                                <div class="label"><label >امتحان شهادة</label></div> 
+                
+                        </div>
+
+                        <div class="bayan">
+                                <input class = "dawra" type="text" >
+                                <div class="label"><label >دورة</label></div>
+                        </div>
+
+                </div>
+
+                <div class="lign">
+                        <div class="bayan">
+                                
+                                <input class = "name_centre" type="text" >
+                                <div class="label"><label >مركز الاجراء</label></div> 
+                
+                        </div>
+
+                        <div class="bayan">
+                                <input class = "code_centre" type="text" >
+                                <div class="label"><label >رمز المركز</label></div>
+                        </div>
+
+                </div>
+
+                <div class="lign">
+                        <div class="bayan">
+                                
+                                <input class = "date_of_first_day" type="date" >
+                                <div class="label"><label >تاريخ اليوم الاول</label></div>
+                
+                        </div>
+
+                        <div class="bayan">
+                                <input class = "baladia" type="text" >
+                                <div class="label"><label >البلدية</label></div> 
+                                
+                        </div>
+
+                </div>
+                <div class="lign">
+                        <div class="bayan">
+                                
+                                <input class = "nmbr_horas_fi_sale" type="number" >
+                                <div class="label"><label >عدد الحراس بالقاعة</label></div> 
+                                                 
+                        </div>
+
+                        <div class="bayan">
+                                <input class = "number_days" type="number" >
+                                <div class="label"><label >عدد الايام</label></div>
+                        </div>
+
+                </div>
+    </form>
+
+   <button id="sendBtn" type="button">حفظ البيانات</button>
+
+   
+</div>
+
+<script src="bayanat.js"></script>
+</body>
+</html>
+
+

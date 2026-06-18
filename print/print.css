@@ -1,0 +1,323 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', Arial, sans-serif;
+}
+
+body {
+    background-color: #e0f7fa;
+    align-items: center;
+    
+}
+
+
+header {
+    background-color: #2355c259;
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    display: flex;
+     justify-content: center;
+    align-items: center;
+}
+
+
+.all{
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+ 
+}
+
+.all div{
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    background-color: #21c526c9;
+    color: #fff;
+    margin: 5px auto;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+.page{
+    width: 100%;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+    
+}
+container{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+     width: 90%;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 10px;
+
+}
+container button{
+    
+    padding: 10px 5px;
+    margin: 10px auto;
+    background-color: #1f3de993;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10%;
+    font-size: 16px;
+}
+container button:hover {
+    background-color: #45a049;
+}
+container button:active {
+    background-color: #163517;
+}
+
+
+
+aside{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-around;
+    
+     width: 40%;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 10px;
+}
+#days{
+    padding: 10px 10px;
+    margin: 10px auto;
+    background-color: #29a6c5a6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 18px;
+}
+#printMode{
+    padding: 10px 10px;
+    margin: 10px auto;
+    background-color: #29a6c5a6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.teacher-table{
+    width:100%;
+    border-collapse:collapse;
+    page-break-inside:avoid;
+    
+}
+
+.teacher-table th,
+.teacher-table td{
+    border:1px solid #000;
+    text-align:center;
+    padding:3px;
+    font-size:16px;
+}
+
+.teacher-table th{
+    background:#f3f3f3;
+}
+
+/* فاصل الصفحات */
+.page-break{
+    page-break-after:always;
+}
+
+
+.row-print{
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+
+.teacher-container{
+    display:table-cell;
+    width:50%;
+    vertical-align:top;
+    padding:4px;
+}
+
+@media print{
+
+
+    *{
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    body{
+        margin:0;
+    }
+
+    .row-print{
+        display:table;
+        width:100%;
+        table-layout:fixed;
+    }
+
+    .teacher-container{
+        display:table-cell;
+        width:50%;
+        vertical-align:top;
+        padding:4px;
+    }
+
+    .page-break{
+        page-break-after:always;
+    }
+}
+
+.page_yawmi{
+    background-color: white;
+}
+.page_yawmi{
+    
+    font-size: 20px;
+  
+}
+
+.diwan_up{
+text-align: center;
+}
+.diwan_centre{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+.diwan_left p{
+    text-align: right;
+    padding: 2px;
+    width: 180px;
+}
+.diwan_right p{
+    text-align: right;
+     padding: 2px;
+}
+.djadwal{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 35px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+
+
+
+.table_hirasa_yawmi {
+    margin: 0 auto;
+   border: #000 1px solid;
+    width: 90%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 14px;
+}
+
+.table_hirasa_yawmi th,
+.table_hirasa_yawmi td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+}
+.table_hirasa_yawmi th {
+    background: #969191;
+    font-weight: bold;
+}
+
+.diwan_down{
+
+display: flex;
+justify-content: space-between;
+margin-top: 40px;
+
+}
+.ijraa{
+    font-size: 22px;
+    border: 1px solid black;
+    margin-right: 40px;
+    padding: 10px 10px;
+   
+   
+}
+
+.khatm{
+
+       margin-left: 40px;
+    padding: 10px; 
+    font-size: 20px;
+}
+
+
+
+
+
+.reserve{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.table_reserve{
+    margin: 0 auto;
+    border: #000 1px solid;
+    width: 90%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 12px;
+}
+.table_reserve th,
+.table_reserve td {
+    border: 1px solid #000;
+    text-align: center;
+    padding: 5px;
+}
+.table_absence{
+    margin: 0 auto;
+    border: #000 1px double;
+    width: 90%;
+  
+    
+    font-size: 18px;
+}
+.table_absence th,
+.table_absence td {
+    border: 1px double #000;
+    text-align: center;
+    padding: 5px;
+}
